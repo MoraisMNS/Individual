@@ -1,0 +1,210 @@
+﻿<Window x:Class="Desktop01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Desktop01"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+       Title="MainWindow" Height="750" Width="1200"
+         WindowStyle="None"
+        ResizeMode="NoResize"
+       
+        Background="Transparent"
+        AllowsTransparency="True"
+        MouseDown="Window_MouseDown"
+         >
+    <Window.DataContext>
+        <local:MainWindowVM/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="459*"/>
+            <RowDefinition Height="269*"/>
+            <RowDefinition Height="22*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.RowSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350"/>
+                <ColumnDefinition Width="208*"/>
+                <ColumnDefinition Width="66*"/>
+                <ColumnDefinition Width="51*"/>
+                <ColumnDefinition Width="0*"/>
+            </Grid.ColumnDefinitions>
+            <Border Background="Black" Padding="10"  Margin="0,0,0,-35">
+                <StackPanel VerticalAlignment="Top" Height="740">
+                    <TextBlock Text="List Of Students" TextAlignment="Center" FontWeight="Bold" FontSize="25" Foreground="White" Height="71"/>
+
+                    <TextBlock Text="Student Management System " TextAlignment="Center" FontWeight="SemiBold" FontSize="22" Foreground="White" Margin="0 30 0 0"/>
+                    <Button Content="ADD STUDENT" Command="{Binding AddStudentCommand}"  Style="{StaticResource mainbutten}"  FontFamily="Castellar" FontWeight="UltraBlack" Margin="0 20 0 20"/>
+                    <Button Content="EDIT STUDENT"  Style="{StaticResource mainbutten}" Command="{Binding ExecuteEditStudentCommandCommand}" FontFamily="Castellar" FontWeight="UltraBlack" Margin="0 0 0 20"/>
+                    <Button Content="DELETE STUDENT"  Style="{StaticResource mainbutten}" Command="{Binding DeleteCommand}" FontFamily="Castellar" FontWeight="UltraBlack"  Margin="0 0 0 20"/>
+                    <Button Content="ADD MORE INFO"  Style="{StaticResource mainbutten}" Command="{Binding AddInfoCommand}" FontFamily="Castellar" FontWeight="UltraBlack" Margin="0 0 0 20" />
+
+                </StackPanel>
+
+            </Border>
+            <Canvas>
+
+                <Ellipse Width="175" Height="292"
+                             Fill="LightBlue" Canvas.Left="281" Canvas.Top="458" HorizontalAlignment="Left" VerticalAlignment="Top"
+                         RenderTransformOrigin="0.614,3.155" Opacity="0.6">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="2.009"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="18.215"/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse Width="128" Height="200"
+                             Fill="Yellow" Canvas.Left="236" Canvas.Top="588" HorizontalAlignment="Center" VerticalAlignment="Top" Opacity="0.7" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-16.502"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse Width="220" Height="294"
+                             Fill="LightBlue" Canvas.Left="-138" Canvas.Top="406" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.4" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="5.817"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse Width="216" Height="241"
+                             Fill="LightBlue" Canvas.Left="67" Canvas.Top="452" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.5"/>
+                <Ellipse Width="111" Height="168"
+                             Fill="Yellow" Canvas.Left="75" Canvas.Top="646" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Opacity="0.7">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="13.587"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+
+
+                <Ellipse Width="170" Height="199"
+                             Fill="LightBlue" Canvas.Left="-30" Canvas.Top="550" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.75" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="23.662"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse Width="81" Height="151"
+                             Fill="Yellow" RenderTransformOrigin="-2.425,1.853" Canvas.Left="-19" Canvas.Top="549"  Opacity="0.45" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-2.643"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse Width="128" Height="153"
+                             Fill="LightBlue" Canvas.Left="152" Canvas.Top="629" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Opacity="0.65">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-22.009"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse Width="128" Height="200"
+                    Fill="Yellow" Canvas.Left="18" Canvas.Top="439" Opacity="0.7" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-16.502"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+                <Ellipse Width="128" Height="200"
+                    Fill="Yellow" Canvas.Left="188" Canvas.Top="430" Opacity="0.7" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="8.621"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+
+            </Canvas>
+
+            <Border Grid.Column="1"  Background="White" CornerRadius="0 0 0 0" Margin="0,10,-226,-35" Grid.ColumnSpan="4" >
+
+                <StackPanel Height="750" VerticalAlignment="Top" Orientation="Vertical" >
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="800 10 10 0">
+                        <Button Background="#2BAEED" BorderThickness="0" Content="-" Foreground="White" FontSize="16" FontFamily="Montserrat"
+                            Cursor="Hand" Click="btnMinimize_Click" Height="22" Width="22"/>
+                        <Button Background="Blue" BorderThickness="0" Content="x" Foreground="White" FontSize="12" FontFamily="Montserrat" Cursor="Hand"
+                                Height="22" Width="22" Click="btnClose_Click"/>
+                    </StackPanel>
+                    <StackPanel Margin=" 55 50 10 0"  HorizontalAlignment="Left" Width="660" Background="Transparent" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5" >
+
+
+
+                        <TextBlock Text="First Name" Foreground="Black" Margin="18 0 0 0" Width="90"/>
+                        <TextBlock Text="Last Name" Foreground="Black" Margin="18 0 0 0"    Width="110" />
+                        <TextBlock Text="Age" Foreground="Black" Margin="18 0 0 0"  />
+                        <TextBlock Text="Date of Birth"  Foreground="Black"   Width="101" Margin="40 0 0 0" />
+                        <TextBlock Text="GPA" Foreground="Black"   />
+                        <TextBlock Text="Department" Foreground="Black" Margin="19 0 0 0" Width="125"/>
+                        <TextBlock Text="Advisor" Foreground="Black" Margin="18 0 0 0" Width="125"/>
+
+                    </StackPanel>
+
+                    <ListView x:Name="Listview"  Margin="13 25 13 0" Background="Transparent" Height="530"  ItemsSource="{Binding Users,UpdateSourceTrigger=PropertyChanged}"
+                     SelectedItem="{Binding SelectedUser,UpdateSourceTrigger=PropertyChanged}" SelectionChanged="Listview_SelectionChanged">
+                        <ListView.ItemTemplate >
+                            <DataTemplate>
+                                <Border Background="Transparent" BorderBrush="Black"  BorderThickness="1"
+                                Padding="0.1" CornerRadius="10" Width="800" Height="45" Margin="2">
+                                    <StackPanel Width="700"  Background="Transparent" Orientation="Horizontal" >
+
+                                        <Image Width="30" Height="30" Margin="2" Source="{Binding Image}" />
+                                        <TextBlock Text="{Binding FirstName,UpdateSourceTrigger=PropertyChanged}"   Width="90"/>
+                                        <TextBlock Text="{Binding LastName,UpdateSourceTrigger=PropertyChanged}"   Width="110"/>
+                                        <TextBlock Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}" Margin="0 0 0 0"   />
+                                        <TextBlock Text="{Binding DateOfBirth,UpdateSourceTrigger=PropertyChanged}" Margin="50 0 0 0"   Width="102" />
+                                        <TextBlock Text="{Binding GPA,UpdateSourceTrigger=PropertyChanged}"/>
+                                        <TextBlock Text="{Binding Department,UpdateSourceTrigger=PropertyChanged}" Margin="35 0 0 0"/>
+                                        <TextBlock Text="{Binding AcademicAdvisor,UpdateSourceTrigger=PropertyChanged}" Margin="50 0 0 0"/>
+
+
+                                    </StackPanel>
+
+                                </Border>
+                            </DataTemplate>
+
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </StackPanel>
+            </Border>
+
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "UQ+jUycakZRP/AKIn9jjhnjSMN93k55X5pRoZpdDx5Ay72AY3irO070wigcqlH/cqMUwrX49ESOdNLcEGKjl3g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nirasha\\Downloads\\GUI_Project_4077\\GUI_Project_4077\\GUI_Projrct_4077\\Desktop01\\Desktop01\\Desktop01.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nirasha\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
+    "C:\\Users\\nirasha\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\nirasha\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\nirasha\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,75 @@
+﻿<Window x:Class="Desktop01.SplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Desktop01"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="SplashScreen" Height="800" Width="800"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Background="Black" ContentRendered="Window_ContentRendered" >
+
+    <materialDesign:Card UniformCornerRadius="15" Background="{DynamicResource MaterialDesignPaper}" materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                        Margin="25">
+        <Border CornerRadius="25 25 25 25">
+     
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120.8">
+
+                </ColumnDefinition>
+                <ColumnDefinition Width="529.2"/>
+                <ColumnDefinition Width="400"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" HorizontalAlignment="Left"
+                        VerticalAlignment="Center" Margin="50,0,0,0" Height="388" Width="590" Grid.ColumnSpan="2">
+                <Canvas>
+
+                    <Polygon Points="500,100 700,100 600,300" Fill="#FF7400BA" HorizontalAlignment="Left" Canvas.Left="23" VerticalAlignment="Top" Canvas.Top="-246"/>
+
+
+
+                    <Polygon Points="400,400 600,400 500,600" Fill="#FF62039B" HorizontalAlignment="Left" Canvas.Top="-246" VerticalAlignment="Top" Canvas.Left="150" />
+
+                    <Polygon Points="200,100 400,100 300,300" Fill="#809A24F9" HorizontalAlignment="Left" VerticalAlignment="Top" Height="300" Canvas.Left="150" Canvas.Top="-341" />
+
+                    <Polygon Points="600,200 800,200 700,400"  HorizontalAlignment="Left" Canvas.Top="-246" VerticalAlignment="Top" Fill="#FF7009CF" Canvas.Left="50" Width="743" />
+
+                    <Polygon Points="300,300 500,300 400,500" Fill="#80490B51" Canvas.Left="140" Canvas.Top="-46" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+                    <Polygon Points="700,400 900,400 800,600" Fill="#8049055E" Canvas.Left="10" Canvas.Top="-246" HorizontalAlignment="Left" VerticalAlignment="Top" Width="868" Height="555" />
+
+                    <Polygon Points="400,200 600,200 500,400" Fill="#80451656" Canvas.Top="-200" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+                    <Polygon Points="500,400 700,400 600,600" Fill="#80662EA3" Canvas.Left="150" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="-36" />
+                </Canvas>
+                <WrapPanel>
+                    <Image Margin="0 60 0 5"   Height="100">
+
+                    </Image>
+                    <TextBlock Text="Student Management System " FontSize="35" FontWeight="ExtraBold" Background="Gold" Width="564"
+                               HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </WrapPanel>
+                <TextBlock Text="Loading Resources....." FontSize="16" FontWeight="Heavy" Background="Gray"
+                           HorizontalAlignment="Left" Margin="0 30 0 15"></TextBlock>
+
+
+                <TextBlock Text="MORAIS M.N.S." FontSize="16" FontWeight="Heavy" Background="Gray"
+                           HorizontalAlignment="Left" Margin="0 30 0 15"></TextBlock>
+                <TextBlock Text="EG/2020/4077" FontSize="16" FontWeight="Heavy" Background="Gray"
+                           HorizontalAlignment="Left" Margin="0 30 0 15"></TextBlock>
+                <ProgressBar Name="progressBar" Value="0" Height="5" Width="548"  IsIndeterminate="True"/>
+
+            </StackPanel>
+
+        </Grid>
+        </Border>
+
+    </materialDesign:Card>
+
+
+</Window>
